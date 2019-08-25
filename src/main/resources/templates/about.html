@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Results</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css"
+	th:href="@{../webjars/bootstrap/3.3.7/css/bootstrap.min.css}" />
+	<link th:href="@{/css/main.css}" rel="stylesheet" />	
+	<!-- Replace for CSS -->
+	<style>
+		.footer {
+		   position: fixed;
+		   left: 0;
+		   bottom: 0;
+		   width: 100%;
+		   background-color: #D3D3D3;
+		   color: #428bca;
+		   text-align: center;
+		}
+	</style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/about">Crypto</a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="../">Home</a></li>
+					<li><a href="../help">Help</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="container">
+	    <p>Crypto - One Time Pad was created as training in cryptography and in the use of different technologies:</p>
+		<ul>
+			<li>Cloud Foundry</li>
+			<li>Spring Boot</li>
+			<li>Apache Tomcat</li>
+			<li>Thymeleaf</li>
+			<li>Bootstrap</li>
+		</ul>
+		<p>You can modify and reuse if you wish. <br /><a href="https://github.com/alojea/OneTimePadWithUI">https://github.com/alojea/OneTimePadWithUI</a></p>
+		<p>Thank you for your interest. <br />Alejandro Ojea</p>
+    </div>
+    
+    <div class="footer">
+	  <p>© 2019 by Alejandro Ojea.</p>
+	</div>
+    <script type="text/javascript"
+		th:src="@{../webjars/bootstrap/3.3.7/js/bootstrap.min.js}"></script>
+</body>
+</html>

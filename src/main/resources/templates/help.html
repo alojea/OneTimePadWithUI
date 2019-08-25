@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Results</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css"
+	th:href="@{../webjars/bootstrap/3.3.7/css/bootstrap.min.css}" />
+	<link th:href="@{/css/main.css}" rel="stylesheet" />	
+	<!-- Replace for CSS -->
+	<style>
+		.footer {
+		   position: fixed;
+		   left: 0;
+		   bottom: 0;
+		   width: 100%;
+		   background-color: #D3D3D3;
+		   color: #428bca;
+		   text-align: center;
+		}
+	</style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="../../about">Crypto</a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="../../">Home</a></li>
+					<li><a href="#">Help</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="container">
+	    <p>Assume your word is the string:</p>
+		<p>DONOTUSEPC (i.e. "do not use PC"). Note that this technique only represents the 26 letter of the alphabet, and doesn't do anything with punctuation or spaces. Assume your keystream string is:</p>
+		<p>KDWUPONOWT Encryption Step 1. Convert the cleartext message from letters to numbers: A = 1, B = 2, etc:</p>
+		<p>4 15 14 15 20 21 19 5 16 3 Step 2. Convert the keystream letters similarly:</p>
+		<p>11 4 23 21 16 15 14 15 23 20 Step 3. Add the cleartext number stream to the keystream numbers, modulo 26. (I.e., if the sum is more than 26, substract 26 from the result.) For example, 1 + 1 = 2, 26 + 1 = 27, and 27 - 26 = 1, so 26 + 1 = 1:</p>
+		<p>15 19 11 10 10 10 7 20 13 23 Step 4. Convert the numbers back to letters:</p>
+		<p>OSKJJJGTMW This string of letters is the ciphertext.</p>
+		<p>Decryption Assume you have a ciphertext message like the string above. To decrypt, you have to use the same keystream that way used for encryption.</p>
+		<p>Step 1. Convert the ciphertext message into numbers:</p>
+		<p>15 19 11 10 10 10 7 20 13 23 Step 2. Convert the keystream letters similarly:</p>
+		<p>11 4 23 21 16 15 14 15 23 20 Step 3. Subtract the keystream numbers from the ciphertext numbers, modulo 26. For example, 22 - 1 = 20, 1 - 22 = 5 (If the first number is less than the second number, add 26 to the first number before subtracting. So 1 - 22 = ? becomes 27 - 22 = 5.):</p>
+		<p>4 15 14 15 20 21 19 5 16 3 Step 3. Convert the numbers back to letters:</p>
+		<p>DONOTUSEPC For an alternative source of information, you can look at these Wikipedia articles:</p>
+		<p><a href="http://en.wikipedia.org/wiki/One-time_pad" rel="nofollow">http://en.wikipedia.org/wiki/One-time_pad</a><br/><a href="http://en.wikipedia.org/wiki/Keystream" rel="nofollow">http://en.wikipedia.org/wiki/Keystream</a>&nbsp;</p>
+		<p><b>Reference:</b><a href="http://www.inf.ed.ac.uk/teaching/courses/inf1/op/Labs/2008/doc/lab5_with_solutions.html" rel="nofollow">http://www.inf.ed.ac.uk/teaching/courses/inf1/op/Labs/2008/doc/lab5_with_solutions.html</a></p>
+    </div>
+    
+    <div class="footer">
+	  <p>© 2019 by Alejandro Ojea.</p>
+	</div>
+    <script type="text/javascript"
+		th:src="@{../webjars/bootstrap/3.3.7/js/bootstrap.min.js}"></script>
+</body>
+</html>

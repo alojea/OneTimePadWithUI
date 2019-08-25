@@ -1,9 +1,11 @@
 package com.alojea;
 
-public class Crypto {
+import com.alojea.utils.CryptoUtils;
+
+public class CryptoController{
 
     static final int MODULE = 26;
-
+    
     public String encrypt(String clearText, String keyStream) {
         int[] clearTextConvertedInNumber = convertStringIntoNumber(clearText);
         int[] keyStreamConvertedInNumber = convertStringIntoNumber(keyStream);

@@ -1,0 +1,17 @@
+h1{
+	color:#0000FF;
+}
+
+h2{
+	color:#FF0000;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #D3D3D3;
+   color: #428bca;
+   text-align: center;
+}

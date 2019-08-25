@@ -7,11 +7,11 @@ import org.junit.Test;
 
 public class CryptoTest{
 
-    Crypto crypto;
+    CryptoController crypto;
 
     @Before
     public void setUp() throws Exception {
-        crypto = new Crypto();
+        crypto = new CryptoController();
     }
 
     @Test

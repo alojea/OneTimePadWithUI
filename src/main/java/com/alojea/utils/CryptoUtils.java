@@ -1,4 +1,4 @@
-package com.alojea;
+package com.alojea.utils;
 
 public class CryptoUtils {
 

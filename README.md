@@ -43,8 +43,8 @@ Step 3. Convert the numbers back to letters:
 DONOTUSEPC
 For an alternative source of information, you can look at these Wikipedia articles:
 
-http://en.wikipedia.org/wiki/One-time_pad
-http://en.wikipedia.org/wiki/Keystream
+http://en.wikipedia.org/wiki/One-time_pad </br>
+http://en.wikipedia.org/wiki/Keystream </br>
 In the Crypto class, you should implement methods corresponding to the following declarations:
 
 public String encrypt(String clearText, String keyStream) {
@@ -65,4 +65,8 @@ which I encrypted using this keystream:
 
 ACWZYRJYHGVNHUCARNVXJPUIFACBWOJFBOTIEBVBBZHANSLYOP
 
-http://www.inf.ed.ac.uk/teaching/courses/inf1/op/Labs/2008/doc/lab5_with_solutions.html
+Reference: http://www.inf.ed.ac.uk/teaching/courses/inf1/op/Labs/2008/doc/lab5_with_solutions.html </br>
+
+Cloud Foundry endpoint: http://crypto.cfapps.io
+
+
